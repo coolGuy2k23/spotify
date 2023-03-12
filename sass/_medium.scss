@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+	.header {
+        &__h1 {
+            font-size: 4rem;
+        }
+        &__text {
+            font-size: 2.2rem;
+        }
+        &__btns {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        &__btn-1 {
+            padding: 1rem 2rem;
+        }
+        &__btn-color{
+            margin-left: 1rem;
+        }
+
+        &__info {
+    
+            font-size: 1.2rem;
+        }
+	}
+}
