@@ -33,15 +33,70 @@
 			color: white;
 			text-decoration: none;
 			transition: color 0.3s;
-            &:hover{
-                color: $hover;
-            }
+			&:hover {
+				color: $hover;
+			}
 		}
 		.hamburger {
 			display: none;
 		}
 	}
-}
 
+	.main {
+		background-color: white;
+		.wrapper {
+			.benefits {
+				&__header {
+					font-size: 4rem;
+					margin-bottom: 3rem;
+				}
+				&__boxes {
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+				}
+				&__box {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 1200px) {
+	.main {
+		background-color: white;
+		.wrapper {
+			.benefits {
+				&__header {
+					font-size: 4rem;
+					margin-bottom: 3rem;
+				}
+				&__boxes {
+					display: flex;
+					justify-content: center;
+					padding-bottom: 4rem;
+				}
+				&__box {
+					width: 25%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				&__box:last-child {
+					padding-bottom: 0;
+				}
+				&__left {
+					margin-left: 0;
+					margin-bottom: 2rem;
+				}
+				&__tag {
+					text-align: center;
+				}
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
 }
