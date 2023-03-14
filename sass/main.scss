@@ -195,10 +195,12 @@ body {
 	&__boxes {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	&__box {
 		position: relative;
+		max-width: 450px;
 		background-color: white;
 		padding: 2rem 4rem;
 		margin: 2rem;
@@ -254,6 +256,49 @@ body {
 	&__describe{
 		font-size: 1.3rem;
 		line-height: 2rem;
+	}
+}
+
+.footer{
+	padding: 4rem 2rem;
+	background-color: $black;
+	.wrapper{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+	&__logo{
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+	}
+	&__link{
+		color: white;
+		font-size: 2.3rem;
+		text-decoration: none;
+	}
+	&__company{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__company-list{
+		margin-bottom: 3rem;
+	}
+	
+	&__company-list-item{
+		margin-bottom: 2rem;
+		color: gray;
+		list-style-type: none;
+		font-size: 1.6rem;
+	}
+	&__company-list-caption{
+		text-transform: uppercase;
+		font-size: 1.4rem;
+	}
+
+	&__list-link{
+		color: white;
+		text-decoration: none;
 	}
 }
 

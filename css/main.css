@@ -181,9 +181,11 @@ body {
 .offer__boxes {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .offer__box {
   position: relative;
+  max-width: 450px;
   background-color: white;
   padding: 2rem 4rem;
   margin: 2rem;
@@ -236,6 +238,46 @@ body {
 .offer__describe {
   font-size: 1.3rem;
   line-height: 2rem;
+}
+
+.footer {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+.footer .wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer__logo {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.footer__link {
+  color: white;
+  font-size: 2.3rem;
+  text-decoration: none;
+}
+.footer__company {
+  display: flex;
+  flex-direction: column;
+}
+.footer__company-list {
+  margin-bottom: 3rem;
+}
+.footer__company-list-item {
+  margin-bottom: 2rem;
+  color: gray;
+  list-style-type: none;
+  font-size: 1.6rem;
+}
+.footer__company-list-caption {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.footer__list-link {
+  color: white;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -347,5 +389,28 @@ body {
   }
   .main .wrapper .benefits p {
     text-align: center;
+  }
+  .offer__header {
+    font-size: 3.4rem;
+    padding-top: 6rem;
+  }
+  .offer__header-c {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+  .offer__boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  .offer__box {
+    position: relative;
+    width: 25%;
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
 }/*# sourceMappingURL=main.css.map */

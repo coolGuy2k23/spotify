@@ -99,4 +99,33 @@
 			}
 		}
 	}
+
+	.offer {
+		
+		&__header {
+			font-size: 3.4rem;
+			padding-top: 6rem;
+		}
+		&__header-c {
+			font-size: 1.8rem;
+			margin-bottom: 4rem;
+		}
+
+		&__boxes {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 6rem;
+		}
+
+		&__box {
+			position: relative;
+			width: 25%;
+			background-color: white;
+			padding: 1rem 2rem;
+			margin: 2rem;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+		}
+	}
 }
