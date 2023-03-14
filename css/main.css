@@ -278,6 +278,50 @@ body {
 .footer__list-link {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__list-link:hover {
+  color: #1ed760;
+}
+.footer__social-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer__social-box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+  background-color: rgb(37, 37, 37);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer__social-box .fa-brands {
+  color: white;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+.footer__social-box .fa-brands:hover {
+  color: #1ed760;
+}
+.footer__country {
+  padding: 2rem 0;
+  text-align: end;
+}
+.footer__country-link {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.footer__country span {
+  transition: color 0.2s;
+}
+.footer__country span:hover {
+  color: #1ed760;
 }
 
 @media (min-width: 768px) {

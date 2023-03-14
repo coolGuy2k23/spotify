@@ -253,52 +253,98 @@ body {
 		}
 	}
 
-	&__describe{
+	&__describe {
 		font-size: 1.3rem;
 		line-height: 2rem;
 	}
 }
 
-.footer{
+.footer {
 	padding: 4rem 2rem;
 	background-color: $black;
-	.wrapper{
+	.wrapper {
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1200px;
 	}
-	&__logo{
+	&__logo {
 		margin-top: 1rem;
 		margin-bottom: 3rem;
 	}
-	&__link{
+	&__link {
 		color: white;
 		font-size: 2.3rem;
 		text-decoration: none;
 	}
-	&__company{
+	&__company {
 		display: flex;
 		flex-direction: column;
 	}
 
-	&__company-list{
+	&__company-list {
 		margin-bottom: 3rem;
 	}
-	
-	&__company-list-item{
+
+	&__company-list-item {
 		margin-bottom: 2rem;
 		color: gray;
 		list-style-type: none;
 		font-size: 1.6rem;
 	}
-	&__company-list-caption{
+	&__company-list-caption {
 		text-transform: uppercase;
 		font-size: 1.4rem;
 	}
 
-	&__list-link{
+	&__list-link {
 		color: white;
 		text-decoration: none;
+		transition: color 0.3s;
+		&:hover {
+			color: $hover;
+		}
+	}
+
+	&__social-boxes {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	&__social-box {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		margin-right: 2rem;
+		background-color: rgb(37, 37, 37);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		.fa-brands {
+			color: white;
+			font-size: 2rem;
+			transition: color 0.2s;
+			&:hover {
+				color: $hover;
+			}
+		}
+	}
+	&__country {
+		padding: 2rem 0;
+		text-align: end;
+		&-link {
+			color: gray;
+			text-decoration: none;
+			font-size: 1.2rem;
+		}
+		span {
+			transition: color 0.2s;
+			&:hover {
+				color: $hover;
+			}
+		}
 	}
 }
 
