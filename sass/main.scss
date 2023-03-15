@@ -346,6 +346,37 @@ body {
 			}
 		}
 	}
+
+	&__politics-box {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	&__politics-left {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap-reverse;
+		width: 70%;
+	}
+	&__politics-link{
+		padding: 2rem 0;
+		display : inline-block;
+		color: gray;
+		text-decoration: none;
+		margin-right: 2rem;
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
+	&__politics-right{
+		display: flex;
+		justify-content: flex-end;
+		width: 30%;
+	}
+	&__politics-copy{
+		color: gray;
+		font-size: 1rem;
+		align-items: center;
+	}
 }
 
 @import './small';

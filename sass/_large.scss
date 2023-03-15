@@ -39,7 +39,7 @@
 		}
 		.hamburger {
 			display: none;
-		}
+		}	
 	}
 
 	.main {
@@ -60,6 +60,23 @@
 				}
 			}
 		}
+	}
+	.footer {
+		&__logo {
+			margin-top: 0;
+		}
+		&__link {
+			font-size: 3.2rem;
+		}
+		&__container{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__company{
+			margin-right: 6rem;
+		}
+
 	}
 }
 @media (min-width: 1200px) {

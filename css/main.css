@@ -323,6 +323,36 @@ body {
 .footer__country span:hover {
   color: #1ed760;
 }
+.footer__politics-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.footer__politics-left {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  width: 70%;
+}
+.footer__politics-link {
+  padding: 2rem 0;
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.footer__politics-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.footer__politics-copy {
+  color: gray;
+  font-size: 1rem;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
   .header__h1 {
@@ -343,6 +373,10 @@ body {
   }
   .header__info {
     font-size: 1.2rem;
+  }
+  .footer__companyl {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
@@ -399,6 +433,19 @@ body {
   }
   .main .wrapper .benefits__box {
     width: 50%;
+  }
+  .footer__logo {
+    margin-top: 0;
+  }
+  .footer__link {
+    font-size: 3.2rem;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__company {
+    margin-right: 6rem;
   }
 }
 @media (min-width: 1200px) {
